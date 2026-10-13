@@ -1,0 +1,25 @@
+[project]
+name = "bitset-subset-sum-balancer"
+version = "0.1.0"
+description = "High-performance bitset-accelerated dynamic programming solver for the NP-complete Subset Sum problem"
+readme = "README.md"
+authors = [
+    { name = "Miguel Martín Vieira", email = "miguel.martin.vieira@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
